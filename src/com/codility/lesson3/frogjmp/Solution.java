@@ -4,13 +4,11 @@ package com.codility.lesson3.frogjmp;
 
 public class Solution {
 	public int solution(int X, int Y, int D) {
-		int jumps = 0;
-
-		while(X < Y) {
-			X += D;
-			jumps++;
+		int distanceToJump = Y - X;
+		int jumpsRequired = distanceToJump / D;
+		if(distanceToJump % D != 0) {
+			jumpsRequired++; //only add extra jump if remainder exists
 		}
-
-		return jumps;
+		return jumpsRequired;
 	}
 }
