@@ -23,6 +23,9 @@ public class SolutionTests {
 			new Object [] { new int [] {   100,    1001,    100 },  10 },
 			new Object [] { new int [] {150000,  999999,  10000 },  85 },
 			new Object [] { new int [] {150000, 1000000,  10000 },  85 },
+			
+			//X and Y are the same - no jumps required
+			new Object [] { new int [] {     14,      14,      3 },   0 },
 		};
 	}
 

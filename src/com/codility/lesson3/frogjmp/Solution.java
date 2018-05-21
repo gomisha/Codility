@@ -5,11 +5,12 @@ package com.codility.lesson3.frogjmp;
 public class Solution {
 	public int solution(int X, int Y, int D) {
 		int jumps = 0;
-		do {
+
+		while(X < Y) {
 			X += D;
 			jumps++;
-		} while (X < Y);
-		
+		}
+
 		return jumps;
 	}
 }
