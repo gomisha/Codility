@@ -37,7 +37,7 @@ public class SolutionTests {
 	}
 	
 	@Test(dataProvider = "test1")
-	public void veritySolution(int [] pA, int pK, int [] pExpectedRotatedA) {
+	public void verifySolution(int [] pA, int pK, int [] pExpectedRotatedA) {
 		int [] actualRotatedA = solution.solution(pA, pK);
 		Assert.assertEquals(pExpectedRotatedA.length, actualRotatedA.length);
 		for(int i=0; i<pExpectedRotatedA.length; i++) {

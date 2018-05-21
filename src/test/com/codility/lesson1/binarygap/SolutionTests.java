@@ -37,7 +37,7 @@ public class SolutionTests {
 	}
 	
 	@Test(dataProvider = "test1")
-	public void veritySolution(int pInput, int expectedBinaryGap) {
+	public void verifySolution(int pInput, int expectedBinaryGap) {
 		Assert.assertEquals(solution.solution(pInput), expectedBinaryGap);
 	}
 }
