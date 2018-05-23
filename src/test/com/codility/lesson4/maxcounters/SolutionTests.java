@@ -1,7 +1,9 @@
 package test.com.codility.lesson4.maxcounters;
 
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import com.codility.lesson4.maxcounters.Solution;
 
