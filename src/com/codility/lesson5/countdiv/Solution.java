@@ -6,15 +6,42 @@ public class Solution {
 	public int solution(int A, int B, int K) {
 		int divisors = 0;
 		
-		if(K > B) return 0; //nothing to do when K > B
+		//nothing to do when K > B
+		if(K > B) {
+			if(A == 0 || B == 0) {
+				return 1; //K mod 0 == 0 so count a single divisor
+			}
+			return 0; //no divisors when A, B both != 0
+		}
 
-		for(int i=A; i<=B; i++) {
-			if(i < K) continue; //no sense in checking when i < K
-			
+		if(A == 0) {
+			divisors++;  //K mod 0 == 0
+		}
+		
+		int updatedA = A;
+		if(K > A) {
+			updatedA = K; //skip checking all values < K
+		}
+		
+		int firstNonZeroDivisor = 0;
+		int lastNonZeroDivisor = 0;
+		
+		for(int i=updatedA; i<=B; i++) {
 			if(i % K == 0) {
-				divisors++;
+				firstNonZeroDivisor = i;
+				break;
 			}
 		}
+		
+		for(int i=B; i>=updatedA; i--) {
+			if(i % K == 0) {
+				lastNonZeroDivisor = i;
+				break;
+			}
+		}
+
+		divisors += ((lastNonZeroDivisor - firstNonZeroDivisor) / K) + 1;
+		
 		return divisors;
 	}
 }
