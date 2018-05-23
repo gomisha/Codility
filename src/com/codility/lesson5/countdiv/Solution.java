@@ -39,8 +39,12 @@ public class Solution {
 				break;
 			}
 		}
-
-		divisors += ((lastNonZeroDivisor - firstNonZeroDivisor) / K) + 1;
+		if(firstNonZeroDivisor == 0 && lastNonZeroDivisor == 0) {
+			divisors = 0;
+		}
+		else {
+			divisors += ((lastNonZeroDivisor - firstNonZeroDivisor) / K) + 1;
+		}
 		
 		return divisors;
 	}

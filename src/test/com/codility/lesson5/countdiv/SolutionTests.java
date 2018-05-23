@@ -27,6 +27,11 @@ public class SolutionTests {
 			new Object [] {  1, 11, 12, 0 }, //K>B, A>0
 			new Object [] {  0, 0,  12, 1 }, //K>B, A==0, B==0
 			new Object [] { 11, 33, 3, 8 },
+			
+			new Object [] { 10, 10,  5, 1 }, //A = 10, B = 10, K in {5,7,20}
+			new Object [] { 10, 10,  7, 0 }, //A = 10, B = 10, K in {5,7,20}
+			new Object [] { 10, 10, 20, 0 }, //A = 10, B = 10, K in {5,7,20}
+			
 			new Object [] { 33, 33, 33, 1 }, //A == B
 			new Object [] { 100000, 1000000, 1000, 901 },
 			new Object [] { 1000, 10000, 10, 901 },
