@@ -5,17 +5,26 @@ package com.codility.lesson5.minavgtwoslice;
 public class Solution {
 	public int solution(int[] A) {
 
-		//main idea: will find min average by checking only 2 contiguous elements at a time
-		int sum = 0;
+		//main idea: will find min average by checking only 2 and 3 contiguous elements at a time
+		//reference: https://codesays.com/2014/solution-to-min-avg-two-slice-by-codility/
+		int sum1, sum2 = 0;
 		double minAverage = Double.MAX_VALUE;
-		double currentAverage = Double.MAX_VALUE;
+		double currentAverage1 = Double.MAX_VALUE;
+		double currentAverage2 = Double.MAX_VALUE;
 		int minAverageSliceIndex = Integer.MAX_VALUE;
 
-		for(int i=0; i<A.length-1; i++) {
-			sum = A[i] + A[i+1];
-			currentAverage = sum / 2.0d;
-			if(currentAverage < minAverage) {
-				minAverage = currentAverage;
+		for(int i=0; i<A.length-2; i++) {
+			sum1 = A[i] + A[i+1];
+			currentAverage1 = sum1 / 2.0d;
+			if(currentAverage1 < minAverage) {
+				minAverage = currentAverage1;
+				minAverageSliceIndex = i;
+			}
+
+			sum2 = sum1 + A[i+2];
+			currentAverage2 = sum2 / 3.0d;
+			if(currentAverage2 < minAverage) {
+				minAverage = currentAverage2;
 				minAverageSliceIndex = i;
 			}
 		}
