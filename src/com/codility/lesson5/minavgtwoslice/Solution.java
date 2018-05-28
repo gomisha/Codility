@@ -11,8 +11,9 @@ public class Solution {
 		double minAverage = Double.MAX_VALUE;
 		double currentAverage1 = Double.MAX_VALUE;
 		double currentAverage2 = Double.MAX_VALUE;
-		int minAverageSliceIndex = Integer.MAX_VALUE;
+		int minAverageSliceIndex = 0; //for size 2 arrays, this will always be true
 
+		//if array is > 2 elements
 		for(int i=0; i<A.length-2; i++) {
 			sum1 = A[i] + A[i+1];
 			currentAverage1 = sum1 / 2.0d;
