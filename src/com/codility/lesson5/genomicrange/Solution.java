@@ -12,20 +12,25 @@ public class Solution {
 		impactFactorMap.put('G', 3);
 		impactFactorMap.put('T', 4);
 		final int BEST_MIN = 1;
-		
+		final int WORST_MIN = 4;
+
 		int [] answers = new int[P.length];
 		
 		for(int i=0; i<P.length; i++) {
-			int bestMin = 4; //start with worst min
+			int lowestMin = WORST_MIN; //start with worst min
+			int currentMin = WORST_MIN;
 			
 			for(int j=P[i]; j<=Q[i]; j++) {
 				char c = S.charAt(j);
-				int min = impactFactorMap.get(c);
 
-				bestMin = Math.min(min, bestMin);
-				answers[i] = min;
-				if(min == BEST_MIN) break; //can't get any lower than this, so can stop searching if found it
+				currentMin = impactFactorMap.get(c);
+				if(currentMin < lowestMin) {
+					lowestMin = currentMin;
+				}
+				if(lowestMin == BEST_MIN) break; //can't get any lower than this, so can stop searching if found it
 			}
+			
+			answers[i] = lowestMin;
 		}
 		return answers;
 	}

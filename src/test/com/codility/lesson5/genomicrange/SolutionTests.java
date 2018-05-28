@@ -20,6 +20,12 @@ public class SolutionTests {
 	@DataProvider(name = "test1")
 	public Object [][] createData1() {
 		return new Object [][] {
+			new Object [] {  "C", new int [] { 0, 0, 0 }, new int [] { 0, 0, 0 }, new int [] { 2, 2, 2} },
+			new Object [] {  "AA", new int [] { 0, 1, 0 }, new int [] { 0, 1, 1 }, new int [] { 1, 1, 1} },
+			new Object [] {  "CC", new int [] { 0, 1, 0 }, new int [] { 0, 1, 1 }, new int [] { 2, 2, 2} },
+			new Object [] {  "GG", new int [] { 0, 1, 0 }, new int [] { 0, 1, 1 }, new int [] { 3, 3, 3} },
+			new Object [] {  "TT", new int [] { 0, 0, 0 }, new int [] { 1, 1, 1 }, new int [] { 4, 4, 4} },
+			new Object [] {  "ATT", new int [] { 0, 0, 0 }, new int [] { 1, 1, 1 }, new int [] { 1, 1, 1} },
 			new Object [] {  "CAGCCTA", new int [] { 2, 5, 0 }, new int [] { 4, 5, 6 }, new int [] { 2, 4, 1} },
 			new Object [] {  "CAGTCAT", new int [] { 0, 1, 3 }, new int [] { 0, 5, 4 }, new int [] { 2, 1, 2} },
 		};
