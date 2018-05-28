@@ -7,13 +7,19 @@ import java.util.List;
 
 //https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
 
+//main strategy:
+//create an ordered array of circles, each item consisting of (leftmost x, rightmost x)
+//have a custom Comparator to order the Circles based on their where their radius starts and stops
+//check intersection by comparing rightmost x with leftmost x of next element
+
 public class Solution {
 	public int solution(int[] A) {
 		List<Circle> aList = new ArrayList<Circle>();
 		
         for(int i=0; i<A.length; i++) {
-        	long leftMost = i - A[i];
-        	long rightMost = i + A[i];
+        	//need explicit cast to long on right side for case when A[i] is Integer.MAX_VALUE and adding would cause overflow
+        	long leftMost = i - (long) A[i];
+        	long rightMost = i + (long) A[i];
 
         	aList.add(new Circle(leftMost, rightMost));
         }
@@ -31,6 +37,7 @@ public class Solution {
 		
 		for(int i=0; i<aOrderedCircles.length-1; i++) {
 			for(int j=i+1; j<aOrderedCircles.length; j++) {
+				//check intersection by comparing rightmost x with leftmost x of next element
 				if(aOrderedCircles[i].rightMostX >= aOrderedCircles[j].leftMostX) {
 					intersections++;
 					
@@ -40,7 +47,6 @@ public class Solution {
 				else break; 
 			}
 		}
-    	
 		return intersections;
     }
 	
