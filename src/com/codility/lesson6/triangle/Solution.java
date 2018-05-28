@@ -24,6 +24,8 @@ public class Solution {
 			aOrdered[index++] = i;
 		}
 
+		//start from the end (largest)
+		//if previous 2 elements have sum > current element, found a triangle 
 		for(int i=aOrdered.length-1; i>=2; i--) {
 			if(aOrdered[i-1] + aOrdered[i-2] > aOrdered[i]) {
 				return 1;
