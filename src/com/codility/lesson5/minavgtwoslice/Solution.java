@@ -29,6 +29,15 @@ public class Solution {
 				minAverageSliceIndex = i;
 			}
 		}
+
+		//check last 2 contiguous elements from the end - they won't otherwise be checked because 
+		//when checking 2 and 3 contiguous elements at a time, will stop checking 3 elements from the end 
+		currentAverage1 = (A[A.length-2] + A[A.length-1]) / 2.0d;
+		if(currentAverage1 < minAverage) {
+			minAverage = currentAverage1;
+			minAverageSliceIndex = A.length-2;
+		}
+		
 		return minAverageSliceIndex;
 	}
 }
