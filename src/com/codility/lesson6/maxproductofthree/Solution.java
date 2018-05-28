@@ -23,7 +23,6 @@ public class Solution {
 		}
 		Collections.sort(aList);
 		
-		
 		int [] aOrdered = new int[A.length];
 		int index = 0;
 		for(Integer i : aList) {
@@ -31,7 +30,7 @@ public class Solution {
 		}
 
 		int product1, product2, product3, product4 = 0;
-		
+
 		product1 = aList.get(0) * aList.get(1) * aList.get(2); //first 3 elements
 		product2 = aList.get(aList.size()-3) * aList.get(aList.size()-2) * aList.get(aList.size()-1); //last 3 elements
 		product3 = aList.get(0) * aList.get(1) * aList.get(aList.size()-1); //first 2 and last element
