@@ -21,6 +21,7 @@ public class SolutionTests {
 	public Object [][] createData1() {
 		return new Object [][] {
 			new Object [] {  new int [] { 4, 2, 2, 5, 1, 5, 8 }, 1 },
+			new Object [] {  new int [] { 10000, -10000 }, 0 }
 		};
 	}
 
