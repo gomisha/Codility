@@ -23,6 +23,7 @@ public class SolutionTests {
 			new Object [] { new int [] { 1, 5, 2, 1, 4, 0 }, 11 }, 
 			new Object [] { new int [] { 2, 1, 0, 4 }, 6 },
 			new Object [] { new int [] {  }, 0 },
+			new Object [] { new int [] { 1 }, 0 },
 			new Object [] { new int [] { 1, 2147483647, 0 }, 2 },
 		};
 	}
