@@ -39,5 +39,4 @@ public class SolutionTests {
 	public void verifySolution(int[] pA, int pExpected) {		
 		Assert.assertEquals(solution.solution(pA), pExpected);
 	}	
-
 }
