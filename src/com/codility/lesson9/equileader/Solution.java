@@ -31,13 +31,13 @@ public class Solution {
 		//no equi leaders if stack is empty
 		if(stack.isEmpty()) return 0;
 		int candidate = stack.peek().intValue();
-		int count = 0;
+		int dominatorCount = 0;
 
 		Map<Integer, Integer> dominatorMap = new HashMap<Integer, Integer>();
 		for(int i=0; i<A.length; i++) {
 			if(A[i] == candidate) {
-				count++;
-				dominatorMap.put(i, count);
+				dominatorCount++;
+				dominatorMap.put(i, dominatorCount);
 			}
 		}
 
@@ -45,25 +45,24 @@ public class Solution {
 		//e.g. if A.length = 4, count needs to be > 2
 		//e.g. if A.length = 5, count needs to be > 2
 		int equiLeaders = 0;
-		if(count > (A.length / 2)) {
+		if(dominatorCount > (A.length / 2)) {
 			//find all equi leader sequences
 			
 			int lastCandidateOccurenceIndex = 0;
-			int occurrences = 0;
+			int runningDominatorCount = 0;
 			for(int i=0; i<A.length-1; i++) {
 				if(A[i] == candidate) {
 					lastCandidateOccurenceIndex = i;
-					occurrences = dominatorMap.get(i).intValue();
+					runningDominatorCount = dominatorMap.get(i).intValue();
 				}
 				else if(dominatorMap.get(lastCandidateOccurenceIndex) != null) {
-					occurrences = dominatorMap.get(lastCandidateOccurenceIndex).intValue();
+					runningDominatorCount = dominatorMap.get(lastCandidateOccurenceIndex).intValue();
 				}
-				if(occurrences > (i+1)/2) {
-					if((count - occurrences) > (A.length - (i+1))/2 ) {
+				if(runningDominatorCount > (i+1)/2) {
+					if((dominatorCount - runningDominatorCount) > (A.length - (i+1))/2 ) {
 						equiLeaders++;
 					}
 				}
-				occurrences = 0; //reset for each check, so don't remember from the previous element
 			}
 		}
 		return equiLeaders;
