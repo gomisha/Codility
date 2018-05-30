@@ -6,6 +6,11 @@ import java.util.Stack;
 
 //https://app.codility.com/programmers/lessons/8-leader/equi_leader/
 
+//strategy: find Dominator with the same code from Dominator problem - if no Dominator, no equi leaders can exist
+//modify Dominator code by keeping running count of # of occurrences of dominator at each dominator index
+//that way, can calculate if there's an equi leader pair at every index in A[]
+
+
 public class Solution {
 	public int solution(int[] A) {
 		Stack <Integer>stack = new Stack<Integer>();
@@ -44,27 +49,23 @@ public class Solution {
 			//find all equi leader sequences
 			
 			int lastCandidateOccurenceIndex = 0;
+			int occurrences = 0;
 			for(int i=0; i<A.length-1; i++) {
 				if(A[i] == candidate) {
 					lastCandidateOccurenceIndex = i;
-					int occurrences = dominatorMap.get(i).intValue();
-					
-					if(occurrences > (i+1)/2) {
-						if((count - occurrences) > (A.length - (i+1))/2 ) {
-							equiLeaders++;
-						}
-					}
+					occurrences = dominatorMap.get(i).intValue();
 				}
 				else if(dominatorMap.get(lastCandidateOccurenceIndex) != null) {
-					int occurrences = dominatorMap.get(lastCandidateOccurenceIndex).intValue();
-					if(occurrences > (i+1)/2) {
-						if((count - occurrences) > (A.length - (i+1))/2 ) {
-							equiLeaders++;
-						}
+					occurrences = dominatorMap.get(lastCandidateOccurenceIndex).intValue();
+				}
+				if(occurrences > (i+1)/2) {
+					if((count - occurrences) > (A.length - (i+1))/2 ) {
+						equiLeaders++;
 					}
 				}
+				occurrences = 0; //reset for each check, so don't remember from the previous element
 			}
 		}
-		return equiLeaders; //no dominator found
+		return equiLeaders;
 	}
 }
