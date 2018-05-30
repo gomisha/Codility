@@ -16,7 +16,7 @@ package com.codility.lesson9.maxslice;
 //  5          7            7 <-------- MAX (end of Max Slice)
 // -3          4            4
 
-public class Solution {
+public class MaxSliceDemo {
     public int solution(int a[]) {
 		int absoluteMax = a[0];
 		int localMax = a[0];

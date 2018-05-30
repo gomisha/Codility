@@ -5,14 +5,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson9.maxslice.Solution;
+import com.codility.lesson9.maxslice.MaxSliceDemo;
 
-public class SolutionTests {
-	private Solution solution;
+public class MaxSliceDemoTests {
+	private MaxSliceDemo solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new MaxSliceDemo();
 	}
 
 	@DataProvider(name = "test1")
