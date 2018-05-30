@@ -5,6 +5,8 @@ package com.codility.lesson9.maxslice;
 public class MaxProfit {
 
 	public int solution(int[] A) {
+		if(A.length < 2) return 0; //for empty array or 1 element array, no profit can be realized
+		
 		//convert profit table to delta table so can use max slice technique
 		int [] deltaA = new int[A.length];
 		deltaA[0] = 0;

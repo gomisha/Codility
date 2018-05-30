@@ -21,6 +21,8 @@ public class MaxProfitTests {
 	public Object [][] createData1() {
 		return new Object [][] {
 			new Object [] { new int [] { 23171, 21011, 21123, 21366, 21013, 21367 }, 356 },
+			new Object [] { new int [] { 23171 }, 0 },
+			new Object [] { new int [] { }, 0 },
 		};
 	}
 
