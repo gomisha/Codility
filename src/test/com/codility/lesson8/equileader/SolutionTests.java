@@ -1,11 +1,11 @@
-package test.com.codility.lesson9.equileader;
+package test.com.codility.lesson8.equileader;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson9.equileader.Solution;
+import com.codility.lesson8.equileader.Solution;
 
 //https://app.codility.com/programmers/lessons/8-leader/equi_leader/
 

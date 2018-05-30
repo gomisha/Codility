@@ -1,4 +1,4 @@
-package com.codility.lesson9.equileader;
+package com.codility.lesson8.equileader;
 
 import java.util.HashMap;
 import java.util.Map;
