@@ -13,29 +13,47 @@ public class Solution {
 
 		int aliveUpstreamFishCounter = 0;
 		for(int i=0; i<A.length; i++) {
-			if(fishStack.isEmpty()) {
-				if(B[i] == DOWNSTREAM) {
-					//don't count this fish yet - need to see if it will survive
-					fishStack.push(new Fish(A[i], B[i]));
-				}
-				else {
-					//this fish will survive because it's UPSTREAM and there's no DOWNSTREAM fish above it
-					aliveUpstreamFishCounter++;
-				}
+			if(fishStack.isEmpty() && B[i] == DOWNSTREAM) {
+				//don't count this fish yet - need to see if it will survive
+				fishStack.push(new Fish(A[i], B[i]));
+			}
+			else if(fishStack.isEmpty() && B[i] == UPSTREAM) {
+				//this fish will survive because it's UPSTREAM and there's no DOWNSTREAM fish above it
+				aliveUpstreamFishCounter++;
 			}
 			else {
 				Fish stackFish = fishStack.peek();
-				if(B[i] == stackFish.direction) { //same direction, so need to take latest fish
-					//fishStack.pop();
+				if(B[i] == stackFish.direction) { //same direction, so put another fish on stack
+					fishStack.push(new Fish(A[i], B[i]));
+				}
+				//if top of stack fish is upstream, not right condition to see who's eating who
+				else if(stackFish.direction == UPSTREAM) {
 					fishStack.push(new Fish(A[i], B[i]));
 				}
 				else { //figure out who's eating who
-					if(stackFish.size < A[i]) {
-						fishStack.pop();
-						fishStack.push(new Fish(A[i], B[i]));
+					while(!fishStack.isEmpty()) {
+						Fish topOfStackFish = fishStack.peek();
+						if(topOfStackFish.direction != B[i]) {
+							//existing fish that was on stack eats latest fish
+							if(topOfStackFish.size > A[i]) {
+								//fishStack.push(topOfStackFish);
+								break; //eating finished
+							}
+							else {
+								fishStack.pop();
+								continue; //keep checking other elements on stack
+								//fishStack.push(new Fish(A[i], B[i]));
+							}
+						}
+						else {
+							fishStack.push(new Fish(A[i], B[i]));
+							break;
+						}
+					}
+					if(fishStack.isEmpty()) {
+						fishStack.push(new Fish(A[i], B[i])); //current fish ate all the fish in the stack
 					}
 				}
-
 			}
 		}
 		
