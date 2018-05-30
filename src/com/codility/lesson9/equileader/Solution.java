@@ -43,11 +43,20 @@ public class Solution {
 		if(count > (A.length / 2)) {
 			//find all equi leader sequences
 			
+			int lastCandidateOccurenceIndex = 0;
 			for(int i=0; i<A.length-1; i++) {
 				if(A[i] == candidate) {
+					lastCandidateOccurenceIndex = i;
 					int occurrences = dominatorMap.get(i).intValue();
 					
-					
+					if(occurrences > (i+1)/2) {
+						if((count - occurrences) > (A.length - (i+1))/2 ) {
+							equiLeaders++;
+						}
+					}
+				}
+				else if(dominatorMap.get(lastCandidateOccurenceIndex) != null) {
+					int occurrences = dominatorMap.get(lastCandidateOccurenceIndex).intValue();
 					if(occurrences > (i+1)/2) {
 						if((count - occurrences) > (A.length - (i+1))/2 ) {
 							equiLeaders++;
