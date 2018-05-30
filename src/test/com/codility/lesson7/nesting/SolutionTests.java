@@ -1,13 +1,13 @@
-package test.com.codility.lesson7.brackets;
+package test.com.codility.lesson7.nesting;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson7.brackets.Solution;
+import com.codility.lesson7.nesting.Solution;
 
-//https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+//https://app.codility.com/programmers/lessons/7-stacks_and_queues/nesting/
 
 public class SolutionTests {
 	private Solution solution;
@@ -20,16 +20,14 @@ public class SolutionTests {
 	@DataProvider(name = "test1")
 	public Object [][] createData1() {
 		return new Object [][] {
-			new Object [] { "{[()()]}", 1 }, 
-			new Object [] { "{[(){([])}()]}", 1 },
-			new Object [] { "{}", 1 },
+			new Object [] { "()()", 1 }, 
+			new Object [] { "((()(()))())", 1 },
 			new Object [] { "()", 1 },
-			new Object [] { "[]", 1 },
-			new Object [] { "[([][])()]", 1 },
-			new Object [] { "([)()]", 0 },
-			new Object [] { "(]", 0 },
+			new Object [] { "((()))", 1 },
+			new Object [] { "((()())())", 1 },
+			new Object [] { ")(", 0 },
 			new Object [] { "", 1 },
-			new Object [] { "{{{{", 0 },
+			new Object [] { "((((", 0 },
 			new Object [] { "))", 0 },
 		};
 	}
