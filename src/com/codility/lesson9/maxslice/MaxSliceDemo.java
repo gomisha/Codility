@@ -17,16 +17,16 @@ package com.codility.lesson9.maxslice;
 // -3          4            4
 
 public class MaxSliceDemo {
-    public int solution(int a[]) {
-		int absoluteMax = a[0];
-		int localMax = a[0];
+    public int solution(int A[]) {
+		int absoluteMax = A[0];
+		int localMax = A[0];
 		int nextSum = 0;
 		int currentElement = 0;
 		
-		for (int i = 1; i < a.length; i++) {
-			currentElement = a[i];
+		for (int i = 1; i < A.length; i++) {
+			currentElement = A[i];
 			nextSum = localMax + currentElement;
-			localMax = Math.max(a[i], nextSum);
+			localMax = Math.max(A[i], nextSum);
 			absoluteMax = Math.max(absoluteMax, localMax);
 		}
 		return absoluteMax;
