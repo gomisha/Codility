@@ -5,16 +5,16 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson11.sieveoferatosthenes.SieveOfEratosthenesDemo;
+import com.codility.lesson11.sieveoferatosthenes.PrimesDemo;
 
 //reference: https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/
 
-public class SieveOfEratosthenesDemoTests {
-	private SieveOfEratosthenesDemo solution;
+public class PrimesDemoTests {
+	private PrimesDemo solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new SieveOfEratosthenesDemo();
+		solution = new PrimesDemo();
 	}
 
 	@DataProvider(name = "test1")
