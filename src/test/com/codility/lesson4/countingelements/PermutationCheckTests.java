@@ -1,17 +1,17 @@
-package test.com.codility.lesson4.permcheck;
+package test.com.codility.lesson4.countingelements;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson4.permcheck.Solution;
+import com.codility.lesson4.countingelements.PermutationCheck;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
 
-public class SolutionTests {
-	private Solution solution;
+public class PermutationCheckTests {
+	private PermutationCheck solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new PermutationCheck();
 	}
 
 	@DataProvider(name = "test1")

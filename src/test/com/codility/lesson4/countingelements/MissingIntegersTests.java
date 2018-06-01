@@ -1,18 +1,18 @@
-package test.com.codility.lesson4.missinginteger;
+package test.com.codility.lesson4.countingelements;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson4.missinginteger.Solution;
+import com.codility.lesson4.countingelements.MissingInteger;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
 
-public class SolutionTests {
-	private Solution solution;
+public class MissingIntegersTests {
+	private MissingInteger solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new MissingInteger();
 	}
 
 	@DataProvider(name = "test1")

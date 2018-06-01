@@ -1,18 +1,18 @@
-package test.com.codility.lesson4.frogriverone;
+package test.com.codility.lesson4.countingelements;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson4.frogriverone.Solution;
+import com.codility.lesson4.countingelements.FrogRiverOne;
 
-public class SolutionTests {
-	private Solution solution;
+public class FrogRiverOneTests {
+	private FrogRiverOne solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new FrogRiverOne();
 	}
 
 	@DataProvider(name = "test1")

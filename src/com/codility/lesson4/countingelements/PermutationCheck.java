@@ -1,11 +1,11 @@
-package com.codility.lesson4.permcheck;
+package com.codility.lesson4.countingelements;
 
 import java.util.HashSet;
 import java.util.Set;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
 
-public class Solution {
+public class PermutationCheck {
 	public int solution(int[] A) {
 		Set<Integer> testedSet = new HashSet<Integer>();
 		Set<Integer> perfectSet = new HashSet<Integer>();

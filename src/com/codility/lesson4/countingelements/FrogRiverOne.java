@@ -1,11 +1,11 @@
-package com.codility.lesson4.frogriverone;
+package com.codility.lesson4.countingelements;
 
 import java.util.HashSet;
 import java.util.Set;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
 
-public class Solution {
+public class FrogRiverOne {
 	public int solution(int X, int[] A) {
 		Set<Integer>requiredLeavesSet = new HashSet<Integer>();
 		for(int i=1; i<=X; i++) {

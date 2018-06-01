@@ -1,20 +1,20 @@
-package test.com.codility.lesson4.maxcounters;
+package test.com.codility.lesson4.countingelements;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson4.maxcounters.Solution;
+import com.codility.lesson4.countingelements.MaxCounters;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
 
-public class SolutionTests {
-	private Solution solution;
+public class MaxCountersTests {
+	private MaxCounters solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new MaxCounters();
 	}
 
 	@DataProvider(name = "test1")
