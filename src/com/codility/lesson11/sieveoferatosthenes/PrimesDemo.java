@@ -20,7 +20,7 @@ public class PrimesDemo {
 		int nSquareRoot = (int) Math.sqrt(N);
 		for(int i=2; i<=nSquareRoot; i++) {
 			if(arePrimes[i]) {
-				//start checking from i^2 because lower numbers will have already be checked
+				//start checking from i^2 because lower numbers will have already been checked
 				//keep checking very multiple of i
 				for(int j=i*i; j<=N; j+=i) {
 					arePrimes[j] = false;
@@ -40,5 +40,4 @@ public class PrimesDemo {
 		
 		return primes;
 	}
-
 }
