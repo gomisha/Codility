@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 
 import com.codility.lesson12.euclidean.ChocolatesByNumbers;
 
+//https://app.codility.com/programmers/lessons/12-euclidean_algorithm/chocolates_by_numbers/
+
 public class ChocolatesByNumbersTests {
 	private ChocolatesByNumbers solution;
 	
