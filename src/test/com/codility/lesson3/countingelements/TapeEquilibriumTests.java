@@ -1,18 +1,18 @@
-package test.com.codility.lesson3.tapeequilibrium;
+package test.com.codility.lesson3.countingelements;
 
 //https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson3.tapeequilibrium.Solution;
+import com.codility.lesson3.countingelements.TapeEquilibrium;
 
-public class SolutionTests {
-	private Solution solution;
+public class TapeEquilibriumTests {
+	private TapeEquilibrium solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new TapeEquilibrium();
 	}
 
 	@DataProvider(name = "test1")

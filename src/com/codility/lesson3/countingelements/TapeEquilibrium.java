@@ -1,8 +1,8 @@
-package com.codility.lesson3.tapeequilibrium;
+package com.codility.lesson3.countingelements;
 
 //https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
 
-public class Solution {
+public class TapeEquilibrium {
 	public int solution(int[] A) {
 		long sumAllElements = 0;
 		for(int i=0; i<A.length; i++) {

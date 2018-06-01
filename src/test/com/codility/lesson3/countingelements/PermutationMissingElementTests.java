@@ -1,19 +1,19 @@
-package test.com.codility.lesson3.permmissingelem;
+package test.com.codility.lesson3.countingelements;
 
 //https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson3.permmissingelem.Solution;
+import com.codility.lesson3.countingelements.PermutationMissingElement;
 
 
-public class SolutionTests {
-	private Solution solution;
+public class PermutationMissingElementTests {
+	private PermutationMissingElement solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new PermutationMissingElement();
 	}
 	
 	@DataProvider(name = "test1")

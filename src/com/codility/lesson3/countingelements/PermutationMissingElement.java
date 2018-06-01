@@ -1,11 +1,11 @@
-package com.codility.lesson3.permmissingelem;
+package com.codility.lesson3.countingelements;
 
 import java.util.HashSet;
 import java.util.Set;
 
 //https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
 
-public class Solution {
+public class PermutationMissingElement {
 	public int solution(int[] A) {
 		int max = A.length + 1;
 		

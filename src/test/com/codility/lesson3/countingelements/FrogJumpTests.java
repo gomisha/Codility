@@ -1,18 +1,18 @@
-package test.com.codility.lesson3.frogjmp;
+package test.com.codility.lesson3.countingelements;
 
 //https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson3.frogjmp.Solution;
+import com.codility.lesson3.countingelements.FrogJump;
 
-public class SolutionTests {
-	private Solution solution;
+public class FrogJumpTests {
+	private FrogJump solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new FrogJump();
 	}
 	
 	@DataProvider(name = "test1")
