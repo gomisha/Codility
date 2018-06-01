@@ -2,8 +2,6 @@ package com.codility.lesson10.primecomposite;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.SortedSet;
-import java.util.TreeSet;
 
 //https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/
 
@@ -39,29 +37,31 @@ public class CountSemiprimes {
 		//https://stackoverflow.com/questions/960431/how-to-convert-listinteger-to-int-in-java
 		int[] primes = primesList.stream().mapToInt(i->i).toArray();
 
+		int [] semiPrimes = new int[N + 1];	
+
 		//populate semi primes set in order
-		SortedSet<Integer> semiPrimeSet = new TreeSet<Integer>();
+		//reference: https://codesays.com/2014/solution-to-count-semiprimes-by-codility/
 		for(int i=0; i<primes.length-1; i++) {
-			semiPrimeSet.add(primes[i] * primes[i]); //square of the prime
+			if(primes[i] * primes[i] > N) {
+				continue;
+			}
+			semiPrimes[primes[i]*primes[i]] = 1;  //square of the prime
 			for(int j=i+1; j<primes.length; j++) {
-				semiPrimeSet.add(primes[i] * primes[j]);
-			}
-		}
-		
-		int [] semiPrimes = new int[P.length];
-		
-		for(int i=0; i<P.length; i++) {
-			int countSemiPrimes = 0;
-			
-			for(int semiPrime : semiPrimeSet) {
-				if(semiPrime < P[i]) continue; //haven't reached range of semi primes yet
-				if(semiPrime > Q[i]) {  //passed range of semi primes - stop searching
-					semiPrimes[i] = countSemiPrimes; 
-					break;
+				if(primes[i] * primes[j] > N) {
+					break; //semi primes are larger than N so can stop calculating them
 				}
-				countSemiPrimes++;
+				semiPrimes[primes[i]*primes[j]] = 1;
 			}
 		}
-		return semiPrimes;
+		
+		for(int i=1; i<semiPrimes.length; i++) {
+			semiPrimes[i] += semiPrimes[i-1];
+		}
+		
+		int [] results = new int[P.length];
+		for(int i=0; i<P.length; i++) {
+			results[i] = semiPrimes[Q[i]] - semiPrimes[P[i] - 1];
+		}
+		return results;
 	}
 }
