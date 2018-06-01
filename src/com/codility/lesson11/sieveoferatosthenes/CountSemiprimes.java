@@ -1,4 +1,4 @@
-package com.codility.lesson10.primecomposite;
+package com.codility.lesson11.sieveoferatosthenes;
 
 import java.util.ArrayList;
 import java.util.List;

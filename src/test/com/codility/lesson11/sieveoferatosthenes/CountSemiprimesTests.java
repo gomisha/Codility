@@ -1,11 +1,11 @@
-package test.com.codility.lesson10.primecomposite;
+package test.com.codility.lesson11.sieveoferatosthenes;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson10.primecomposite.CountSemiprimes;
+import com.codility.lesson11.sieveoferatosthenes.CountSemiprimes;
 
 //https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/
 
