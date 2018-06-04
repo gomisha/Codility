@@ -35,4 +35,14 @@ public class FibonacciDemoTests {
 			Assert.assertEquals(actualFibs[i], pExpectedFibs[i]);	
 		}
 	}
+	
+	@Test(dataProvider = "data1")
+	public void verifyGetFibsFast(int pN, int [] pExpectedFibs) {
+		int [] actualFibs = solution.getFibsFast(pN);
+		Assert.assertEquals(actualFibs.length, pExpectedFibs.length);
+		for(int i=0; i<pExpectedFibs.length; i++) {
+			Assert.assertEquals(actualFibs[i], pExpectedFibs[i]);	
+		}
+	}
+	
 }
