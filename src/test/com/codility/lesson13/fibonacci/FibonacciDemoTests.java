@@ -28,13 +28,11 @@ public class FibonacciDemoTests {
 	}
 	
 	@Test(dataProvider = "data1")
-	public void verifySolution(int pN, int [] pExpectedFibs) {
+	public void verifyGetFibs(int pN, int [] pExpectedFibs) {
 		int [] actualFibs = solution.getFibs(pN);
 		Assert.assertEquals(actualFibs.length, pExpectedFibs.length);
 		for(int i=0; i<pExpectedFibs.length; i++) {
 			Assert.assertEquals(actualFibs[i], pExpectedFibs[i]);	
 		}
-		
 	}
-
 }
