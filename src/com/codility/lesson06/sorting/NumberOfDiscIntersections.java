@@ -1,4 +1,4 @@
-package com.codility.lesson6.numberofdiscintersections;
+package com.codility.lesson06.sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,7 +12,7 @@ import java.util.List;
 //have a custom Comparator to order the Circles based on their where their radius starts and stops
 //check intersection by comparing rightmost x with leftmost x of next element
 
-public class Solution {
+public class NumberOfDiscIntersections {
 	public int solution(int[] A) {
 		List<Circle> aList = new ArrayList<Circle>();
 		
@@ -68,7 +68,7 @@ public class Solution {
 			if(pCircle1.leftMostX < pCircle2.leftMostX) return -1; //e.g. circle1 (-4, 6) < circle2 (-2, 9)
 			if(pCircle2.leftMostX < pCircle1.leftMostX) return 1;  //e.g. circle2 (-4, 6) < circle1 (-3, 1)
 			if(pCircle1.rightMostX < pCircle2.rightMostX) return -1; //e.g. circle1 (-4, 3) < circle2 (-4, 6)
-			if(pCircle2.rightMostX < pCircle1.rightMostX) return 1;  //e.g. circle2 (-4, 3) < circle1 (-4, 10)
+			if(pCircle2.rightMostX < pCircle1.rightMostX) return 1;  //e.g. circle2 (-4, 3) < circle1 (-4, 1)
 			
 			return 0;  //e.g. circle1 (-2, 2), circle2 (-2, 2)
 		}

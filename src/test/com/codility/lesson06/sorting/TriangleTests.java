@@ -1,20 +1,20 @@
-package test.com.codility.lesson6.triangle;
+package test.com.codility.lesson06.sorting;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson6.triangle.Solution;
+import com.codility.lesson06.sorting.Triangle;
 
 //https://app.codility.com/programmers/lessons/6-sorting/triangle/
 
-public class SolutionTests {
-	private Solution solution;
+public class TriangleTests {
+	private Triangle solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new Triangle();
 	}
 
 	@DataProvider(name = "test1")

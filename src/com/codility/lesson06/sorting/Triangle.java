@@ -1,4 +1,4 @@
-package com.codility.lesson6.triangle;
+package com.codility.lesson06.sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +6,7 @@ import java.util.List;
 
 //https://app.codility.com/programmers/lessons/6-sorting/triangle/
 
-public class Solution {
+public class Triangle {
     public int solution(int[] A) {
     	if(A.length < 3) return 0;
     	

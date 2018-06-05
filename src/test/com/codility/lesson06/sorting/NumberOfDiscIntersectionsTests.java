@@ -1,20 +1,20 @@
-package test.com.codility.lesson6.numberofdiscintersections;
+package test.com.codility.lesson06.sorting;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson6.numberofdiscintersections.Solution;
+import com.codility.lesson06.sorting.NumberOfDiscIntersections;
 
 //https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
 
-public class SolutionTests {
-	private Solution solution;
+public class NumberOfDiscIntersectionsTests {
+	private NumberOfDiscIntersections solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new NumberOfDiscIntersections();
 	}
 
 	@DataProvider(name = "test1")

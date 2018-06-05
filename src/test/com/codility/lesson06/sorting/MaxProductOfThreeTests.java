@@ -1,20 +1,20 @@
-package test.com.codility.lesson6.maxproductofthree;
+package test.com.codility.lesson06.sorting;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson6.maxproductofthree.Solution;
+import com.codility.lesson06.sorting.MaxProductOfThree;
 
 //https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/
 
-public class SolutionTests {
-	private Solution solution;
+public class MaxProductOfThreeTests {
+	private MaxProductOfThree solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new MaxProductOfThree();
 	}
 
 	@DataProvider(name = "test1")

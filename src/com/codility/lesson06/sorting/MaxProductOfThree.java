@@ -1,4 +1,4 @@
-package com.codility.lesson6.maxproductofthree;
+package com.codility.lesson06.sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,7 +15,7 @@ import java.util.List;
 //so we first add all the array elements into a list, order the list and then find the max of the above 4 values
 //it has to be a list and not a set because duplicate elements ARE allowed so we don't want to presever them
 
-public class Solution {
+public class MaxProductOfThree {
 	public int solution(int[] A) {
 		List<Integer> aList = new ArrayList<Integer>();
 		for(int i=0; i<A.length; i++) {
@@ -23,12 +23,6 @@ public class Solution {
 		}
 		Collections.sort(aList);
 		
-		int [] aOrdered = new int[A.length];
-		int index = 0;
-		for(Integer i : aList) {
-			aOrdered[index++] = i;
-		}
-
 		int product1, product2, product3, product4 = 0;
 
 		product1 = aList.get(0) * aList.get(1) * aList.get(2); //first 3 elements
