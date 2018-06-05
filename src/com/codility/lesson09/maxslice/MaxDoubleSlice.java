@@ -1,4 +1,4 @@
-package com.codility.lesson9.maxslice;
+package com.codility.lesson09.maxslice;
 
 //reference: https://stackoverflow.com/questions/25726735/maxdoubleslicesum-codility-algorithm
 //reference: https://rafal.io/posts/codility-max-double-slice-sum.html

@@ -1,4 +1,4 @@
-package com.codility.lesson9.maxslice;
+package com.codility.lesson09.maxslice;
 
 //https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_profit/
 

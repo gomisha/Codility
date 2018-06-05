@@ -1,4 +1,4 @@
-package com.codility.lesson9.maxslice;
+package com.codility.lesson09.maxslice;
 
 //practice Max Slice implementation from https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 //reference: https://codility.com/media/train/7-MaxSlice.pdf

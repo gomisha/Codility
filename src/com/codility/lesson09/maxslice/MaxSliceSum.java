@@ -1,4 +1,4 @@
-package com.codility.lesson9.maxslice;
+package com.codility.lesson09.maxslice;
 
 //https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/
 //copied code from MaxSliceDemo which has a very detailed strategy explanation

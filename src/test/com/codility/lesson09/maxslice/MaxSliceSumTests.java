@@ -1,11 +1,11 @@
-package test.com.codility.lesson9.maxslice;
+package test.com.codility.lesson09.maxslice;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson9.maxslice.MaxSliceSum;
+import com.codility.lesson09.maxslice.MaxSliceSum;
 
 //https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/
 
