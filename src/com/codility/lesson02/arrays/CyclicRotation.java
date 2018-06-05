@@ -1,7 +1,7 @@
-package com.codility.lesson2.cyclicrotation;
+package com.codility.lesson02.arrays;
 
 //https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
-public class Solution {
+public class CyclicRotation {
 	public int[] solution(int[] A, int K) {
 		int [] rotatedA = new int[A.length];
 		

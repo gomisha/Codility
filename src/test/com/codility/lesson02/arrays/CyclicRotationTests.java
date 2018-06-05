@@ -1,18 +1,18 @@
-package test.com.codility.lesson2.cyclicrotation;
+package test.com.codility.lesson02.arrays;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson2.cyclicrotation.Solution;
+import com.codility.lesson02.arrays.CyclicRotation;
 
 
 //https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
-public class SolutionTests {
-	private Solution solution;
+public class CyclicRotationTests {
+	private CyclicRotation solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new CyclicRotation();
 	}
 	
 	@DataProvider(name = "test1")

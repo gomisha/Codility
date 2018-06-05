@@ -1,17 +1,17 @@
-package test.com.codility.lesson2.oddoccurrencesinarray;
+package test.com.codility.lesson02.arrays;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson2.oddoccurrencesinarray.Solution;
+import com.codility.lesson02.arrays.OddOccurrencesInArray;
 
 
-public class SolutionTests {
-	private Solution solution;
+public class OddOccurrencesInArrayTests {
+	private OddOccurrencesInArray solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new OddOccurrencesInArray();
 	}
 	
 	@DataProvider(name = "test1")

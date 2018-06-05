@@ -1,9 +1,9 @@
-package com.codility.lesson2.oddoccurrencesinarray;
+package com.codility.lesson02.arrays;
 
 import java.util.HashMap;
 import java.util.Set;
 
-public class Solution {
+public class OddOccurrencesInArray {
 	public int solution(int[] A) {
 		HashMap <Integer, Integer> occurrencesMap = new HashMap<Integer, Integer>();
 		
