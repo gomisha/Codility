@@ -1,20 +1,20 @@
-package test.com.codility.lesson5.genomicrange;
+package test.com.codility.lesson05.prefixsums;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson5.genomicrange.Solution;
+import com.codility.lesson05.prefixsums.GenomicRangeQuery;
 
 //https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
 
-public class SolutionTests {
-	private Solution solution;
+public class GenomicRangeQueryTests {
+	private GenomicRangeQuery solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new GenomicRangeQuery();
 	}
 
 	@DataProvider(name = "test1")

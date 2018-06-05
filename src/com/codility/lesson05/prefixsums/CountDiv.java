@@ -1,8 +1,8 @@
-package com.codility.lesson5.countdiv;
+package com.codility.lesson05.prefixsums;
 
 //https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
 
-public class Solution {
+public class CountDiv {
 	public int solution(int A, int B, int K) {
 		int divisors = 0;
 		

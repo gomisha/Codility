@@ -1,20 +1,20 @@
-package test.com.codility.lesson5.minavgtwoslice;
+package test.com.codility.lesson05.prefixsums;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson5.minavgtwoslice.Solution;
+import com.codility.lesson05.prefixsums.MinAverageTwoSlice;
 
 //https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 
-public class SolutionTests {
-	private Solution solution;
+public class MinAverageTwoSliceTests {
+	private MinAverageTwoSlice solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new MinAverageTwoSlice();
 	}
 
 	@DataProvider(name = "test1")

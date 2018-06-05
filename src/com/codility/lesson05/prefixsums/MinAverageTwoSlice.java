@@ -1,8 +1,8 @@
-package com.codility.lesson5.minavgtwoslice;
+package com.codility.lesson05.prefixsums;
 
 //https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 
-public class Solution {
+public class MinAverageTwoSlice {
 	public int solution(int[] A) {
 
 		//main idea: will find min average by checking only 2 and 3 contiguous elements at a time

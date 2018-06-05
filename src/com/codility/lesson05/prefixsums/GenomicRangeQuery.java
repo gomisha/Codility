@@ -1,11 +1,11 @@
-package com.codility.lesson5.genomicrange;
+package com.codility.lesson05.prefixsums;
 
 //https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
 //references: 
 //https://rafal.io/posts/codility-genomic-range-query.html (Java)
 //https://codesays.com/2014/solution-to-genomic-range-query-by-codility/ (Python)
 
-public class Solution {
+public class GenomicRangeQuery {
 	//main idea: keep running occurrence count of each nucleotide (A/C/G/T) at every position in S
 	public int[] solution(String S, int[] P, int[] Q) {
 		int [] answers = new int[P.length];

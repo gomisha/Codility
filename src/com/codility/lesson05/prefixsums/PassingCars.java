@@ -1,19 +1,14 @@
-package com.codility.lesson5.passingcars;
-
-import java.util.HashSet;
-import java.util.Set;
+package com.codility.lesson05.prefixsums;
 
 //https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
 
-public class Solution {
+public class PassingCars {
 	public int solution(int[] A) {
-		Set<Integer> zeroIndicesSet = new HashSet<Integer>();
 		int zeros = 0;
 		int carPasses = 0;
 		
 		for(int i=0; i<A.length; i++) {
 			if(A[i] == 0) {
-				zeroIndicesSet.add(i);
 				zeros++;
 			}
 			

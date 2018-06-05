@@ -1,20 +1,20 @@
-package test.com.codility.lesson5.countdiv;
+package test.com.codility.lesson05.prefixsums;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson5.countdiv.Solution;
+import com.codility.lesson05.prefixsums.CountDiv;
 
 //https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
 
-public class SolutionTests {
-	private Solution solution;
+public class CountDivTests {
+	private CountDiv solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new CountDiv();
 	}
 
 	@DataProvider(name = "test1")
