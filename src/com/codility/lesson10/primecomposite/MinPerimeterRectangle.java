@@ -17,7 +17,7 @@ public class MinPerimeterRectangle {
 		if(Math.pow(squareRootN, 2) != N) {
 			squareRootN++; //round up for any non-perfect squares
 		}
-		else { //perfect square root won't be reached inside loop so calculate and set max perimeter
+		else { //perfect square root won't be reached inside loop so calculate and set min perimeter
 			minPerimeter = 2 * (squareRootN + squareRootN);
 		}
 
