@@ -1,11 +1,11 @@
-package test.com.codility.lesson4.countingelements;
+package test.com.codility.lesson04.countingelements;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson4.countingelements.FrogRiverOne;
+import com.codility.lesson04.countingelements.FrogRiverOne;
 
 public class FrogRiverOneTests {
 	private FrogRiverOne solution;

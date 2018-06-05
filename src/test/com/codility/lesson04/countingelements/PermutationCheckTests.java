@@ -1,8 +1,8 @@
-package test.com.codility.lesson4.countingelements;
+package test.com.codility.lesson04.countingelements;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson4.countingelements.PermutationCheck;
+import com.codility.lesson04.countingelements.PermutationCheck;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
 

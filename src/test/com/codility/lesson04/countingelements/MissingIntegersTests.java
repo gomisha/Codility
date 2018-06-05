@@ -1,9 +1,9 @@
-package test.com.codility.lesson4.countingelements;
+package test.com.codility.lesson04.countingelements;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson4.countingelements.MissingInteger;
+import com.codility.lesson04.countingelements.MissingInteger;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
 

@@ -1,11 +1,11 @@
-package test.com.codility.lesson4.countingelements;
+package test.com.codility.lesson04.countingelements;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson4.countingelements.MaxCounters;
+import com.codility.lesson04.countingelements.MaxCounters;
 
 //https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
 
