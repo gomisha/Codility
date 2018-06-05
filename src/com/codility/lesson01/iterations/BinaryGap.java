@@ -1,10 +1,10 @@
-package com.codility.lesson01.binarygap;
+package com.codility.lesson01.iterations;
 
 import java.util.ArrayList;
 import java.util.List;
 
 //https://app.codility.com/programmers/lessons/1-iterations/
-public class Solution {
+public class BinaryGap {
 	public int solution(int N) {
 		String binaryString = Integer.toBinaryString(N);
 		

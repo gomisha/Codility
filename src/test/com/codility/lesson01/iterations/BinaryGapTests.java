@@ -1,17 +1,17 @@
-package test.com.codility.lesson01.binarygap;
+package test.com.codility.lesson01.iterations;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson01.binarygap.Solution;
+import com.codility.lesson01.iterations.BinaryGap;
 
 //https://app.codility.com/programmers/lessons/1-iterations/
-public class SolutionTests {
-	private Solution solution;
+public class BinaryGapTests {
+	private BinaryGap solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new BinaryGap();
 	}
 	
 	//http://acc6.its.brooklyn.cuny.edu/~gurwitz/core5/nav2tool.html
