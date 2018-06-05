@@ -1,4 +1,4 @@
-package com.codility.lesson7.stonewall;
+package com.codility.lesson07.stacksqueues;
 
 import java.util.Stack;
 
@@ -16,12 +16,12 @@ import java.util.Stack;
 // (0,5) //5 (after clearing stack)
 // (0,5), (5,7) //7
 // (0,5), (5,7), (7,9) //9
-// (0,5), (5,7), (7,8) //8 (after poping stack)
-// (0,5), (5,7) //7 (after poping stack)
+// (0,5), (5,7), (7,8) //8 (after popping stack)
+// (0,5), (5,7) //7 (after popping stack)
 // (0,4) // 4 (after clearing stack)
 // (0,4), (4,8) //8
 
-public class Solution {
+public class StoneWall {
 	public int solution(int[] H) {
 
 		//e.g. H[0] = 2 would be a block of size (0, 2)

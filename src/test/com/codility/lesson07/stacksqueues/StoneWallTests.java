@@ -1,20 +1,20 @@
-package test.com.codility.lesson7.stonewall;
+package test.com.codility.lesson07.stacksqueues;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson7.stonewall.Solution;
+import com.codility.lesson07.stacksqueues.StoneWall;
 
 //https://app.codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/
 
-public class SolutionTests {
-	private Solution solution;
+public class StoneWallTests {
+	private StoneWall solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new StoneWall();
 	}
 
 	@DataProvider(name = "test1")

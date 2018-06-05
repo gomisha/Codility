@@ -1,20 +1,20 @@
-package test.com.codility.lesson7.fish;
+package test.com.codility.lesson07.stacksqueues;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson7.fish.Solution;
+import com.codility.lesson07.stacksqueues.Fish;
 
 //https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/
 
-public class SolutionTests {
-	private Solution solution;
+public class FishTests {
+	private Fish solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new Fish();
 	}
 
 	@DataProvider(name = "test1")
