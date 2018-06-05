@@ -1,4 +1,4 @@
-package com.codility.lesson8.equileader;
+package com.codility.lesson08.leader;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,8 +10,7 @@ import java.util.Stack;
 //modify Dominator code by keeping running count of # of occurrences of dominator at each dominator index
 //that way, can calculate if there's an equi leader pair at every index in A[]
 
-
-public class Solution {
+public class EquiLeader {
 	public int solution(int[] A) {
 		Stack <Integer>stack = new Stack<Integer>();
 		

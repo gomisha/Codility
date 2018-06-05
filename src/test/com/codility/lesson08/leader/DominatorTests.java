@@ -1,20 +1,20 @@
-package test.com.codility.lesson8.dominator;
+package test.com.codility.lesson08.leader;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson8.dominator.Solution;
+import com.codility.lesson08.leader.Dominator;
 
 //https://app.codility.com/programmers/lessons/8-leader/dominator/
 
-public class SolutionTests {
-	private Solution solution;
+public class DominatorTests {
+	private Dominator solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new Dominator();
 	}
 
 	@DataProvider(name = "test1")

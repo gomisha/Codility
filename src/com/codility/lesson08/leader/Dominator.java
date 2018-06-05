@@ -1,4 +1,4 @@
-package com.codility.lesson8.dominator;
+package com.codility.lesson08.leader;
 
 import java.util.Stack;
 
@@ -13,7 +13,7 @@ import java.util.Stack;
 //
 //reference: https://codility.com/media/train/6-Leader.pdf
 
-public class Solution {
+public class Dominator {
 
 	public int solution(int[] A) {
 		Stack <Integer>stack = new Stack<Integer>();

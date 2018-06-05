@@ -1,20 +1,20 @@
-package test.com.codility.lesson8.equileader;
+package test.com.codility.lesson08.leader;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.codility.lesson8.equileader.Solution;
+import com.codility.lesson08.leader.EquiLeader;
 
 //https://app.codility.com/programmers/lessons/8-leader/equi_leader/
 
-public class SolutionTests {
-	private Solution solution;
+public class EquiLeaderTests {
+	private EquiLeader solution;
 	
 	@BeforeTest
 	public void setUp() {
-		solution = new Solution();
+		solution = new EquiLeader();
 	}
 
 	@DataProvider(name = "test1")
