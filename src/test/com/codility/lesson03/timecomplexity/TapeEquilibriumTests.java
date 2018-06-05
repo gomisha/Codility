@@ -1,11 +1,11 @@
-package test.com.codility.lesson3.countingelements;
+package test.com.codility.lesson03.timecomplexity;
 
 //https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson3.countingelements.TapeEquilibrium;
+import com.codility.lesson03.timecomplexity.TapeEquilibrium;
 
 public class TapeEquilibriumTests {
 	private TapeEquilibrium solution;

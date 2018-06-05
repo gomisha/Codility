@@ -1,4 +1,4 @@
-package com.codility.lesson3.countingelements;
+package com.codility.lesson03.timecomplexity;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,11 +1,11 @@
-package test.com.codility.lesson3.countingelements;
+package test.com.codility.lesson03.timecomplexity;
 
 //https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson3.countingelements.PermutationMissingElement;
+import com.codility.lesson03.timecomplexity.PermutationMissingElement;
 
 
 public class PermutationMissingElementTests {

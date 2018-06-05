@@ -1,11 +1,11 @@
-package test.com.codility.lesson3.countingelements;
+package test.com.codility.lesson03.timecomplexity;
 
 //https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson3.countingelements.FrogJump;
+import com.codility.lesson03.timecomplexity.FrogJump;
 
 public class FrogJumpTests {
 	private FrogJump solution;

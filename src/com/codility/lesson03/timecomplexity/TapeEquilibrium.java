@@ -1,4 +1,4 @@
-package com.codility.lesson3.countingelements;
+package com.codility.lesson03.timecomplexity;
 
 //https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
 
