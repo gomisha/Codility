@@ -1,9 +1,9 @@
-package test.com.codility.lesson1.binarygap;
+package test.com.codility.lesson01.binarygap;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.codility.lesson1.binarygap.Solution;
+import com.codility.lesson01.binarygap.Solution;
 
 //https://app.codility.com/programmers/lessons/1-iterations/
 public class SolutionTests {

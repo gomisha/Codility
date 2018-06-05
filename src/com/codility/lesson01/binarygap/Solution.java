@@ -1,4 +1,4 @@
-package com.codility.lesson1.binarygap;
+package com.codility.lesson01.binarygap;
 
 import java.util.ArrayList;
 import java.util.List;
