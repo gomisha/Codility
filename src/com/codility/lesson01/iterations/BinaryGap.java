@@ -15,20 +15,13 @@ public class BinaryGap {
 			if(binaryString.charAt(i) == '0') continue;
 			onesList.add(i);
 		}
-		
+
 		for(int i=0; i<onesList.size() - 1; i++) {
 			//subtract 1 so that don't count 1's next to each other as having any gap
 			int indicesDiff = onesList.get(i+1) - onesList.get(i) - 1;
 			
-			//if 1's are next to each other, there's no gap
-			if(indicesDiff == 0) continue;
-			
-			//if current binary gap less than previous record, don't record it
-			if(longestBinaryGap > indicesDiff) continue;
-			
-			longestBinaryGap = indicesDiff;
+			longestBinaryGap = Math.max(longestBinaryGap, indicesDiff);
 		}
-
 		return longestBinaryGap;
 	}
 }
