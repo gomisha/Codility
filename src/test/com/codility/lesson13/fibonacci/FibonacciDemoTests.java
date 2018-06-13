@@ -44,5 +44,4 @@ public class FibonacciDemoTests {
 			Assert.assertEquals(actualFibs[i], pExpectedFibs[i]);	
 		}
 	}
-	
 }

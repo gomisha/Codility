@@ -9,7 +9,7 @@ import java.util.List;
 
 //main strategy:
 //create an ordered array of circles, each item consisting of (leftmost x, rightmost x)
-//have a custom Comparator to order the Circles based on their where their radius starts and stops
+//have a custom Comparator to order the Circles based on where their radius starts and stops
 //check intersection by comparing rightmost x with leftmost x of next element
 
 public class NumberOfDiscIntersections {

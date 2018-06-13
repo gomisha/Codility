@@ -18,11 +18,8 @@ public class TapeEquilibrium {
 			sumFirstPart += A[p];
 			sumSecondPart = sumAllElements - sumFirstPart;
 			currentDifference = (int) Math.abs(sumFirstPart - sumSecondPart);
-			if(currentDifference < minDifference) {
-				minDifference = currentDifference;
-			}
+			minDifference = Math.min(currentDifference, minDifference);
 		}
-		
 		return minDifference;
 	}
 }

@@ -52,5 +52,4 @@ public class Dominator {
 
 		return -1; //no dominator found
 	}
-
 }

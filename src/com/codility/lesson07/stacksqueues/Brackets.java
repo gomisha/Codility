@@ -4,8 +4,8 @@ import java.util.Stack;
 
 //https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
 
-//strategy: keep a stack of opening and closing brackets on a stack and pop elements of stack when find 
-//opening-closing bracket match
+//strategy: keep a stack of opening brackets on a stack and pop elements off stack when 
+//encounter closing bracket and check that it's a proper open bracket-close bracket match 
 //special case: odd number of characters - can't be nested
 //special case: encountering closing bracket when stack is empty - can't be nested
 

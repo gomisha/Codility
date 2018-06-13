@@ -5,6 +5,7 @@ import java.util.List;
 
 //purpose: for a given integer N, find all primes up to N
 //reference: https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/
+//reference: https://codility.com/media/train/9-Sieve.pdf
 public class PrimesDemo {
 
 	public int[] solution(int N) {
